@@ -1,0 +1,6 @@
+<mat-list *ngFor="let logro of logros" role="list">
+    <mat-list-item role="listitem">
+        <h3 mat-line>{{logro.title}}</h3> <br>
+        <p mat-line>{{logro.description | truncate:50}}</p>
+    </mat-list-item>
+</mat-list>

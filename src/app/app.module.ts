@@ -28,7 +28,7 @@ import { LogroComponent } from './logro/logro.component';
     LogroComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
 

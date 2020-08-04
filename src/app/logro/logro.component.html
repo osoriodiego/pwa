@@ -1,0 +1,13 @@
+<mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{logro.title}}</mat-card-title>
+    <mat-card-subtitle>{{logro.author}}</mat-card-subtitle>
+</mat-card-header>
+<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" width="50px">
+<mat-card-content>
+    <p> {{logro.description}} </p>
+</mat-card-content>
+<mat-card-actions>
+    <a mat-raised-button routerLink="/">volver al inicio</a>
+    <button mat-raised-button (click)="shared(logro.id)">Compartir</button>
+</mat-card-actions>

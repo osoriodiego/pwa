@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//pages
-import { HomeComponent } from './home/home.component';
 
 //material
 import { MaterialModule } from './material.module';
@@ -14,12 +12,20 @@ import { MaterialModule } from './material.module';
 //pipes
 import { TruncatePipe } from './pipes/truncate.pipe';
 
+//services
+import { LogrosService } from './services/logros.service';
+
+//pages
+import { HomeComponent } from './home/home.component';
+import { LogroComponent } from './logro/logro.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TruncatePipe
+    TruncatePipe,
+    LogroComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 
     MaterialModule
   ],
-  providers: [],
+  providers: [LogrosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

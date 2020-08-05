@@ -1,40 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-//material
-import { MaterialModule } from './material.module';
-
-//pipes
-import { TruncatePipe } from './pipes/truncate.pipe';
-
-//services
-import { LogrosService } from './services/logros.service';
-
-//pages
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { HomeComponent } from './home/home.component';
 import { LogroComponent } from './logro/logro.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LogrosComponent } from './logros/logros.component';
+import { ItemComponent } from './item/item.component';
+import { ItemsComponent } from './items/items.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 
 @NgModule({
   declarations: [
+    TruncatePipe,
     AppComponent,
     HomeComponent,
-    TruncatePipe,
-    LogroComponent
+    LogroComponent,
+    NavbarComponent,
+    LogrosComponent,
+    ItemComponent,
+    ItemsComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-
-    MaterialModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule
   ],
-  providers: [LogrosService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

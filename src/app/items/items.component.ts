@@ -4,11 +4,12 @@ import { Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/database'; 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-items',
+  templateUrl: './items.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class ItemsComponent implements OnInit {
+
 
   title = 'items';
   description = 'firestore xample';

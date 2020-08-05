@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { LogrosService, ILogro } from '../services/logros.service';
-import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-logro',
   templateUrl: './logro.component.html',
-  styleUrls: ['./logro.component.css']
+  styles: []
 })
 export class LogroComponent implements OnInit {
+
 
   logro: ILogro;
 

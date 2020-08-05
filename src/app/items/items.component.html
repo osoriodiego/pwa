@@ -4,7 +4,7 @@
         <div class="col-sm-6">
             <form (ngSubmit)="onSubmit()">
                 <div class="form-group mb-2">
-                    <input type="text" class="form-control" placeholder="nuevo logro ..." id="item" required [(ngModel)]="itemValue" name="item">
+                    <input type="text" class="form-control" placeholder="nuevo item..." id="item" required [(ngModel)]="itemValue" name="item">
                 </div>
 
                 <div align="right">
@@ -16,7 +16,7 @@
         <div class="col-sm-6">
             <div *ngFor="let item of items | async">
                 <div class="list-group">
-                    <a routerLink="{{item.content}}" class="list-group-item list-group-item-action" aria-current="true">
+                    <a routerLink="/item/{{item.content}}" class="list-group-item list-group-item-action" aria-current="true">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">{{item.content}}</h5>
                             <small>3 days ago</small>

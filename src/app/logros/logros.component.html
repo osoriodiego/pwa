@@ -1,0 +1,8 @@
+<div *ngFor="let logro of logros" role="list">
+    <div class="card">
+        <div class="card-body">
+            <a routerLink="/logro/{{logro.id}}">{{logro.title}}</a>
+            <p mat-line>{{logro.description | truncate:50}}</p>
+        </div>
+    </div>
+</div>

@@ -44,6 +44,12 @@ export class LogrosService {
         title: "sdfadsfadsafd",
         author: "author X",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci corrupti distinctio voluptate incidunt in facilis eius optio, omnis voluptatum doloremque deleniti recusandae saepe doloribus praesentium necessitatibus, id earum officia?"
+      },
+      {
+        id: 7,
+        title: "Tiiiituuuulooo",
+        author: "Nano Osorio",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci corrupti distinctio voluptate incidunt in facilis eius optio, omnis voluptatum doloremque deleniti recusandae saepe doloribus praesentium necessitatibus, id earum officia?"
       }
     ];
   }

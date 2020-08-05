@@ -29,6 +29,7 @@ Angular Universal v8
 ```sh
     $ ng add @nguniversal/express-engine --clientProject pwa
 ```
+to run
 ```sh
     $ npm run build:ssr && npm run serve:ssr
 ```

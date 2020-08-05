@@ -22,6 +22,12 @@ to run
     $ ng serve -o
 ```
 
+Angular Fire / Firebase
+```sh
+    $ ng add @angular/fire --clientProject pwa
+```
+
+
 Angular Universal v8
 * [Server Side Render ¿qué es?](https://lemoncode.net/lemoncode-blog/2018/5/13/server-side-rendering-i-conceptos)
 * [SSR with Angular Universal (oficial)](https://angular.io/guide/universal)

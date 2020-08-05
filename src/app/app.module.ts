@@ -30,7 +30,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     ItemsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
